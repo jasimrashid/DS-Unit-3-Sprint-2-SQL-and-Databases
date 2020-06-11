@@ -17,13 +17,15 @@ MongoDB:
 
     Cons>>
         Querying and analysing data is difficult, especially for non-technical user who is acquainted with 
-        the standard syntax for relationa SQL. Not a good choice for a use-case in an environment where 
+        the standard syntax for relationait SQL. Not a good choice for a use-case in an environment where 
         users are business users.
         
 
         (to confirm) MongoDB seems(?) optimized to store name/value pairs. If we are certain about
-        the datatype/format and the quality of the data, it might be preferable to predefine the data structure(column
-        name, datatype, etc.) as this may improve efficiency.
+        the datatype/format and the quality of the data, it might be more efficient to manage the data in a
+        database with predefined data model/attributes
+
+        (to confirm) optimized for storing and managing text data
 
 PostgreSQL:
 
