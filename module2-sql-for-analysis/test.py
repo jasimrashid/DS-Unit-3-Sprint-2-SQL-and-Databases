@@ -8,7 +8,7 @@ import pandas as pd
 # DB_FILEPATH = "module1-introduction-to-sql/rpg_db.sqlite3"
 #DB_FILEPATH = os.path.join("module1-introduction-to-sql", "chinook.db")
 #DB_FILEPATH = os.path.join(os.path.dirname(__file__), "..", "module2-0...", "chinook.db")
-DB_FILEPATH = os.path.join(os.path.dirname(__file__), "rpg_db.sqlite3")
+DB_FILEPATH = "rpg_db.sqlite3")
 DB_FILEPATH2 = os.path.join(os.path.dirname(__file__), "buddymove_holidayiq.sqlite3")
 # DB_FILEPATH2 = "buddymove_holidayiq.sqlite3"
 CSV_FILEPATH = os.path.join(os.path.dirname(__file__), "buddymove_holidayiq.csv")

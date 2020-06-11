@@ -44,7 +44,6 @@ print("-- How many total Characters are there?")
 #     print(type(row[0])
 
 
-
 print("hello")
 
 
