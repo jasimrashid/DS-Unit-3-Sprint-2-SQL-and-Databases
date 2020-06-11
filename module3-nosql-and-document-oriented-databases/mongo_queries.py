@@ -97,12 +97,31 @@ print("DOCUMENTS COUNT:", collection.count_documents({}))
 
 
 
-# for doc in collection.find({"level": {"$gt": 20}}):
-#     print(doc)
+# # for doc in collection.find({"level": {"$gt": 20}}):
+# #     print(doc)
 
 
+# for i, row in enumerate(result):
+#     collection.insert_one({
+#         "character_id": row[0],
+#         "name": row[1],
+#         "level": row[2],
+#         "exp": row[3],
+#         "hp": row[4],
+#         "strength": row[5],
+#         "intelligence": row[6],
+#         "dexterity": row[7],
+#         "wisdom": row[8]
+#         }
+#     )
+# print("DOCS:", collection.count_documents({}))
+# # print(collection.count_documents({"name": "Pikachu"}))
+
+rowstoinsert = []
 for i, row in enumerate(result):
-    collection.insert_one({
+    
+
+    rowstoinsert.append({
         "character_id": row[0],
         "name": row[1],
         "level": row[2],
@@ -114,8 +133,8 @@ for i, row in enumerate(result):
         "wisdom": row[8]
         }
     )
-print("DOCS:", collection.count_documents({}))
-# print(collection.count_documents({"name": "Pikachu"}))
+
+
 
 breakpoint()
 
